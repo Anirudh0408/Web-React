@@ -1,16 +1,16 @@
-import React,{useState} from 'react';
-import './App.css';
+function alertMsg()
+{
+    alert("Message from Javascript Alert!");
+    console.log("Message to Developer");
+}
 
- const App=()=>{
-  const display=()=>{
-    alert("Message from JavaScript Alert!")
-    console.log("Message to developer")
-  }
-  return (
-    <div>
-      <h1>Let we see the output of Javascript</h1>
-      <button onClick={display}>Check</button>
-    </div>
-  )
- }
+function App()
+{
+    return(
+        <div className="App">
+            <h1>Let we see the output of javascript</h1>
+            <button onClick={alertMsg}>CE1</button>
+        </div>
+    );
+}
 export default App;
