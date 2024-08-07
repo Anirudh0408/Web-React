@@ -1,31 +1,27 @@
-import React,{useState} from 'react';
-import './App.css';
-const app2=()=>{
-  const name1="Aadharsh";
-  const name2="Aadharsh";
-  const obj1={name:"Aadharsh"}
-  const obj2={name:"Aadharsh"}
-  if(name1===name2)
-  {
-    alert(true);
-  }else{
-    alert(false);
-  }
-  if(obj1.name === obj2.name)
-  {
-    alert(true);
-  }else{
-    alert(false);
-  }
+function App()
+{
+    return(
+        <div className="App">
+            <button onClick={eq}>CY1</button>
+        </div>
+    )
 }
- const App=()=>{
-  return(
-    <div>
-      <button onClick={app2}>Click</button>
-      {/*<p>This is World Functional Component</p>*/}
-    </div>
-  )
- }
-
-
+function eq(){
+    const name1="Kabil";
+    const name2="Kabil";
+    const object1="Kabil";
+    const object2="Kabil";
+    if(name1==name2){
+        console.log("True");
+    }
+    else{
+        console.log("False");
+    }
+    if(object1==object2){
+        console.log("True");
+    }
+    else{
+        console.log("False");
+    }
+}
 export default App;
